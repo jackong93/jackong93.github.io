@@ -17,24 +17,13 @@
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
         <div class="navigation-wrapper">
-
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Experience</a></li>
-            </ul>
-          </nav>
-
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Education</a></li>
-            </ul>
-          </nav>
-
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
-            </ul>
-          </nav>
+          {% for page_type in site.data.page_type %} 
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li class="navigation__item"><a href="{{ site.baseurl }}/#{{ page_type.hash }}" title="link to {{ site.title }} {{ page_type.hash }}" class="blog-button">{{ page_type.name }}</a></li>
+              </ul>
+            </nav>
+          {% endfor %}
 
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
