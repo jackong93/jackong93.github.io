@@ -23,7 +23,6 @@ vendor/bundle
 # OS or Editor folders
 ._*
 .cache
-.sass_cache
 .DS_Store
 .idea
 .project
@@ -41,3 +40,9 @@ Thumbs.db
 # Folders to ignore
 node_modules
 js/coverage
+
+# Sass files
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
