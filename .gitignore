@@ -23,6 +23,7 @@ vendor/bundle
 # OS or Editor folders
 ._*
 .cache
+.sass_cache
 .DS_Store
 .idea
 .project
@@ -36,7 +37,6 @@ Thumbs.db
 
 # Jekyll metadata and extra config file for `github` script
 .jekyll-metadata
-.sass_cache
 
 # Folders to ignore
 node_modules
