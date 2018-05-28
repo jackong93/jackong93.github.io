@@ -1,24 +1,40 @@
-title:              Jack Ong
-email:              jackong2013@gmail.com
-description:        My name is Jack. That's all for now, cya!
-baseurl:            ""
-url:                "https://jackong93.github.io/"
-github_username:    jackong93
+# Site settings
+title:          Jack Ong
+description:    Hi I am Jack Ong. That's all for now~
+url:            "https://jackong93.github.io/"
+baseurl:        ""
+
+author:
+  name:                 'Jack Ong'
+  email:                jackong2013@gmail.com
+  facebook_username:    jack.ong.min.keat
+  github_username:      jackong93
+  linkedin_username:    minkeat
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 # Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+highlighter: rouge
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
