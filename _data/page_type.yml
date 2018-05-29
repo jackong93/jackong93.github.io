@@ -1,5 +1,5 @@
-- name: Experience
-  hash: experience
+- name: Experiences
+  hash: experiences
 
 - name: Education
   hash: education

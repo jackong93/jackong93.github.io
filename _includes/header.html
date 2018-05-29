@@ -20,7 +20,7 @@
           {% for page_type in site.data.page_type %} 
             <nav class="cover-navigation cover-navigation--primary">
               <ul class="navigation">
-                <li class="navigation__item"><a href="{{ site.baseurl }}/#{{ page_type.hash }}" title="link to {{ site.title }} {{ page_type.hash }}" class="blog-button">{{ page_type.name }}</a></li>
+                <li class="navigation__item"><a href="{{ site.baseurl }}/#{{ page_type.hash }}" title="link to {{ site.title }} {{ page_type.hash }}" class="navigation-button" id="{{ page_type.hash }}">{{ page_type.name }}</a></li>
               </ul>
             </nav>
           {% endfor %}

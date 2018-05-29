@@ -3,38 +3,39 @@ title:          Jack Ong
 description:    Hi I am Jack Ong. That's all for now~
 url:            "https://jackong93.github.io/"
 baseurl:        ""
+timezone:       Asia/Singapore
 
 author:
-  name:                 'Jack Ong'
-  email:                jackong2013@gmail.com
-  facebook_username:    jack.ong.min.keat
-  github_username:      jackong93
-  linkedin_username:    minkeat
+    name:                 'Jack Ong'
+    email:                jackong2013@gmail.com
+    facebook_username:    jack.ong.min.keat
+    github_username:      jackong93
+    linkedin_username:    minkeat
 
 defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
+    -
+        scope:
+            path: ''
+            type: 'posts'
+        values:
+            layout: 'post'
 
 # Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
-markdown: kramdown
-highlighter: rouge
+destination:    _site
+paginate:       10
+permalink:      /:year/:title/
+markdown:       kramdown
+highlighter:    rouge
 
 sass:
     sass_dir: _sass
     style: compressed
 
 kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
+    # use Github Flavored Markdown
+    input: GFM
+    # do not replace newlines by <br>s
+    hard_wrap: false
 
 plugins: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
