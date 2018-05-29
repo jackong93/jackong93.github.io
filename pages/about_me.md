@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Education
 robots: noindex
 ---
 
-# Education
+# Hello I am Jack

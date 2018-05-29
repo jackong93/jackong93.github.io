@@ -4,7 +4,7 @@ robots: noindex
 ---
 
 {% for page_type in site.data.page_type %}
-  <div class="{{page_type.hash}} hidden">
+  <div class="{{ page_type.hash }} hidden">
     {% if page_type.hash == "blog" %}
       <div class="main-post-list">
 
@@ -33,7 +33,8 @@ robots: noindex
       </div>
     {% endif %}
     {% for page in site.pages %}
-      {% if page.title == page_type.name %}
+      {% assign page_name = page.url | split: "/" | last %}
+      {% if page_name == page_type.hash %}
         {{ page.content }}
       {% endif %}
     {% endfor %}
