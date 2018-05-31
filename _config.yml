@@ -4,6 +4,8 @@ description:    Hi I am Jack Ong. And I am the one on the right in the backgroun
 url:            "https://jackong93.github.io/"
 baseurl:        ""
 timezone:       Asia/Singapore
+google_analytics: 'UA-83223132-2'
+disqus_shortname: 'jackong93'
 
 author:
     name:                 'Jack Ong'
