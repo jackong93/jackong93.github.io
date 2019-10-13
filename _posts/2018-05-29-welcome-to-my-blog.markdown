@@ -2,7 +2,6 @@
 title:  "Welcome to My Blog!"
 date:   2018-05-29 12:30:00 +08:00
 comments: true
-categories: [jekyll]
 tags: [jekyll]
 ---
 
